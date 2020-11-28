@@ -1,0 +1,59 @@
+.text{
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    /* color: azure; */
+    font-size:48px;
+    color: Azure;
+    text-shadow: 3px 3px 10px #000000;
+    font-weight:bold;
+    animation-name: move;
+    transition-timing-function: ease;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+  }
+
+  .text2{
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    /* color: azure; */
+    /* font-size:36px; */
+    /* color: rgb(0, 0, 0.2); */
+    /* text-shadow: 3px 3px 8px #333333; */
+    font-weight:bold;
+    animation-name: move2;
+    transition-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    
+  }
+
+  @keyframes move{
+    from {
+      transform: translateX(-3000px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes move2{
+    from {
+      transform: translateX(3000px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+  #intro{
+    transition: 0.5s;
+  }
+
+  #light{
+    width: 100px;
+  }
